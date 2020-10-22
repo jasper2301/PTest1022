@@ -12,8 +12,8 @@ namespace PTest1022 {
             int inputNum;
             string outStr = ""; //出力用文字列格納用
 
-            Console.Write("〇問題１ 数字を入力して下さい：");
-            inputNum = int.Parse(Console.ReadLine());
+            Console.Write("〇問題１ 数字を入力して下さい："); //hyouji
+            inputNum = int.Parse(Console.ReadLine()); //write
 
             //以下のように出力する。
             //但し、条件演算子を使用し、出力する文字列は outStr を使用すること
@@ -21,9 +21,15 @@ namespace PTest1022 {
             //６以上…「６以上です」
 
             /*** ●●● ここへ解答を入力 ●●● ***/
-            
 
-
+            if (inputNum <= 5)
+            {
+                Console.WriteLine(inputNum + "は５以下");
+            }
+            else if (inputNum >= 6)
+            {
+                Console.WriteLine(inputNum + "は６以上");
+            }
 
 
             /*** ●●●●● ここまで ●●●●● ***/
@@ -39,9 +45,9 @@ namespace PTest1022 {
             //※動作チェックする場合は「Exam_2_Stab()を使用すること」
 
             /*** ●●● ここへ解答を入力 ●●● ***/
+            data = new int[] {150 ,-9999 };
 
-
-
+            
 
 
 
@@ -95,7 +101,7 @@ namespace PTest1022 {
 
 
             /*** ●●●●● ここまで ●●●●● ***/
-            Console.WriteLine($"ページの合計は{ pageSum }ページです。");
+            //Console.WriteLine($"ページの合計は{ pageSum }ページです。");
         }
 
         //問題５
